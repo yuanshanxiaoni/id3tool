@@ -1,0 +1,79 @@
+1.0a
+*	Initial version
+*	didn't get published cause I was too lazy to be bothered copying from
+	my home system to my work system.
+
+1.0b
+*	Finished id3 style tagging code with textual descriptions
+	and set commands.
+
+1.0c
+*	re-fixed that bug [code base split by accident!]
+*	tidyed up id3tool.c a bit [It was a bit too kludgish]
+*	changed those C++ comments [// blah] that I'm sure was pissing off a 
+	few people to C comments [/* blah */]
+*	Tested on:
+	*	i386/linux [OK]
+	*	sparc/linux [OK]
+*	Revised README file.
+
+1.1a
+*	Debian control files
+*	autoconf/automake control files 
+	[got sick of hand kludging the makefile]
+*	New distro site [kitsumi.nethack.net is not under my control at the 
+	moment :(]
+
+1.1b
+*	Fixed package to include missing files *d'oh!*
+
+1.1c
+*	Merged Win32 patches from Steve Kemp <skx@tardis.ed.ac.uk>.
+	Patches were NOT acceptible in base form, and some files were modified.
+*	Proper Win32 Makefile made.
+*	Patched configure scripts to check for getopt dependancies now.
+	[In recognition that some psuedo-unixes mightn't have getopt]
+*	Patched original getopt.c file so it #ifndef's itself out if
+	GETOPT_LONG is already availible. - I assume getopt.[ch] are
+	from the GNU C Library, but steve didn't specify.
+
+1.1d 
+* 	Corrected tag replace bug (tags were always being appended, rather
+	than replaced). Very sorry to those affected.  yet again, this
+	one was a one character fix :/
+*	Tested on:
+	*	i386/linux [OK]
+	*	ix86/win32 (Visual C 6) [OK]
+*	Fixed rampantly incorrect email addresses in the documentation.
+*	Fixed bug where if multiple file names were specified, only
+	the files with tags before the first file without one had their
+	ID3 tags displayed.
+*	Fixed Win32 version to link in setargv.obj, so file globbing works as
+	expected.
+
+1.1e
+*	"Yet Another Bugfix" release.  This focus'd on a bug where
+	tag reading behaved a little "wierdly" because of files < 128 bytes.
+	This is now fixed.
+*	THIS IS THE LAST 1.1 RELEASE I WANT TO DO.
+	Hopefully the pre-2.0's might start appearing really soon.
+
+1.1f
+*	Updated all email addresses to be correct [now that xware.cx exists]
+*	"Yet Another Bugfix" release.  *sigh*.
+	This time its a weirdness in RedHat where they don't support the
+	negative seek offset via fseek.  
+*	Fixed a one number `braino' when I knew I should have put a `1' 
+	instead of a `128', but didn't.
+1.2
+*	v1.1 support to stop people from sending me bugreports from broken
+	id3v1.1 support patch somebody did. (may they burn in hell).
+*	Webspace address change.
+*	Remove GNU Getopt.  Replace with NetBSD getopt.
+*	License Change.  id3tool 1.2 is now BSD licensed.
+
+1.2a
+*	fixed broken getopt string (should close debian bug #280180)
+*	fixed broken header reference (was annoying non-linux users)
+*	Actually tested win32 build this time
+*	fixed word wrapping in copyright notice.

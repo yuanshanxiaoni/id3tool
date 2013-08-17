@@ -1,0 +1,13 @@
+The Win32 Port was originally submitted by Steve Kemp.
+
+Steve's web page is at http://www.tardis.ed.ac.uk/~skx/
+
+The diffs he submitted were a bit messy, and the makefile was not
+acceptible in the state in which he submitted it.
+
+He originally submitted the GNU getopt implementation for use with
+Win32, this has since been replaced with NetBSD's getopt. (for
+licensing reasons).
+
+For build instructions, please refer to INSTALL.
+-- Chris Collins <ccollins@pcug.org.au>  5 Nov 2002 13:55 EDT (+1100)

@@ -1,0 +1,20 @@
+INSTALL
+
+Installation instructions for id3tool (Unixes & Psuedo-Unixes)
+
+id3tool is now a autoconf/automake package (since 1.1), so making
+id3tool is now fairly foolproof.  It will not build with BSD make
+though, so you will need GNU make.  Sorry!
+
+1) run ./configure
+2) run "make"
+3) run "make install" as root.
+4) bingo :)  You're done :) have fun labelling all your mp3s.
+
+Installation instructions for id3tool on Win32
+
+1) run "nmake /f id3tool.mak prep"
+2) run "nmake all"
+3) copy the resultant id3tool.exe into an appropriate directory.
+
+-- Chris Collins <xfire@xware.cx> 5 Nov 2002 14:33 EDT (+1100)

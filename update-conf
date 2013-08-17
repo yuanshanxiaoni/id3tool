@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# Run the tools to build ./configure
+aclocal
+automake -a -v
+autoconf
+autoheader

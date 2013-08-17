@@ -1,0 +1,46 @@
+#ifndef _CONFIG_H
+#define _CONFIG_H
+
+/* Define if you have the ANSI C header files.  */
+#define STDC_HEADERS
+
+/* Version Symbols */
+#define PACKAGE "id3tool"
+#define VERSION "1.2a"
+
+/* Define if you have the strcasecmp function.  */
+#undef HAVE_STRCASECMP
+
+/* Define if you have the getopt_long function.  */
+#undef HAVE_GETOPT_LONG
+
+/* Define if you have the strdup function.  */
+#define HAVE_STRDUP
+
+/* Define if you have the stricmp function.  */
+#define HAVE_STRICMP
+
+/* Define if you have the <unistd.h> header file.  */
+#undef HAVE_UNISTD_H
+/*=======================================================================*/
+/*                    DO NOT EDIT BELOW THIS POINT!!!!                   */
+/*=======================================================================*/
+
+#ifndef HAVE_STRDUP
+extern char *	my_strdup (char *strin);
+#define strdup(x) my_strdup(x)
+#endif
+
+#ifndef HAVE_STRCASECMP
+#ifdef HAVE_STRICMP
+#define strcasecmp(x,y) stricmp(x,y)
+#else
+#define strcasecmp(x,y) strcmp(x,y)
+#endif /* HAVE_STRICMP */
+#endif /* HAVE_STRCASECMP */
+
+#ifndef HAVE_GETOPT_LONG
+#include "bsd_getopt.h"
+#endif
+
+#endif

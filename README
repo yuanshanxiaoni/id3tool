@@ -1,0 +1,62 @@
+README for id3tool
+
+id3tool: a program for manipulating mp3 ID3 Tags
+
+Using id3tool:
+--==========--
+id3tool should be fairly straight forward.
+
+run it with "-h" to get usage.
+
+no flags, with a filename prints the tags
+
+--set-blah flags with a filename sets the ID3 tag
+
+id3tool now also has a manpage [a really dodgey one yes, but a
+manpage].  If somebody volunteers to write a better manpage, I will
+consider whatever is produced.
+
+History:
+--====--
+id3tool was written as a test program for a small id3 stub I'd written
+for the "Ultimate MP3 Player" which is still a concept, and no code ;)
+Having made a useful tool for setting ID3 tags [I hate GUI tag
+editors] I decided I might as well tidy it up and release it.
+
+The ID3 tag stub was originally written under windows, using ANSI C,
+and copied over to linux where it worked perfectly first time. [yay!]
+
+id3.c can still be ripped out of id3tool to provide id3 tag
+manipulaiton functionality for other programs under the terms of the
+BSD License.
+
+Originally, I wasn't going to have any Win32 support, but somebody
+submitted a patch - so I've incorporated it with some `corrections'.
+
+ID3tool became available under the BSD license with 1.2.
+
+The Future of id3tool:
+--==================--
+id3tool has reached the end of its development - I no longer have the
+time to reinvent the wheel.
+
+I will continue to patch the few bugs in id3tool as I find them.
+
+Donations: 
+--======-- 
+If you want to make me feel all nice and fuzzy for writing this,
+please send me Music CDs, especially anime soundtracks, or Anime
+DVDs... I could always do with more of both. :) Email me
+(xfire@xware.cx) for my current postal address.
+
+Alternatively, you could do the Samba thing, and buy me some Pizza ;)
+
+Copyright/License Blurb:
+--====================--
+
+id3tool is released under the modified BSD license.  Read COPYING
+for details.
+
+Happy Hacking.
+
+-- Chris Collins <xfire@xware.cx>  11 Jul 2005 08:45 EST (+1000)
