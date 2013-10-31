@@ -1,0 +1,41 @@
+autoscan: warning: missing AC_CHECK_FUNCS([memset]) wanted by: 
+	id3.c:247
+	id3tool.c:133
+	id3tool.c:344
+	id3tool.c:348
+	id3tool.c:352
+	id3tool.c:360
+	id3tool.c:363
+	id3tool.c:377
+autoscan: warning: missing AC_CHECK_FUNCS([strchr]) wanted by: 
+	bsd_getopt.c:234
+	bsd_getopt.c:354
+autoscan: warning: missing AC_C_CONST wanted by: 
+	bsd_getopt.c:72
+	bsd_getopt.c:72
+	bsd_getopt.c:74
+	bsd_getopt.c:83
+	bsd_getopt.c:84
+	bsd_getopt.c:85
+	bsd_getopt.c:86
+	bsd_getopt.c:87
+	bsd_getopt.c:88
+	bsd_getopt.c:118
+	bsd_getopt.c:155
+	bsd_getopt.c:156
+	bsd_getopt.c:294
+	bsd_getopt.c:294
+	bsd_getopt.c:321
+	bsd_getopt.c:322
+	bsd_getopt.c:323
+	bsd_getopt.h:31
+	bsd_getopt.h:31
+	bsd_getopt.h:32
+	bsd_getopt.h:32
+	bsd_getopt.h:32
+autoscan: warning: missing AC_FUNC_MALLOC wanted by: 
+	id3tool.c:78
+autoscan: warning: missing AC_TYPE_SIZE_T wanted by: 
+	bsd_getopt.c:332
+	id3tool.c:144
+	id3tool.c:144

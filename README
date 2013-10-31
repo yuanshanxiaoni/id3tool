@@ -60,3 +60,8 @@ for details.
 Happy Hacking.
 
 -- Chris Collins <xfire@xware.cx>  11 Jul 2005 08:45 EST (+1000)
+
+
+-- update [bigdog(2013-10-31)]
+add convert title gbk 2 utf8 
+
